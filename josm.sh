@@ -312,7 +312,7 @@ if [ $offline -eq 0 -a $override_jar -eq 0 ]; then
 fi
 
 # start josm: use alsa instead of oss, enable 2D-acceleration, set maximum memory for josm, pass all arguments to josm and write a log:
-	cd $OLDPWD
+	cd "$OLDPWD"
 	echo "starting josm..."
 
 	if [ $override_jar -ne 1 ]; then
